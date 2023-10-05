@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+:root {
+  --main-color: #0a58ca;
+  --second-main-colr: #dc3545;
+  --hover-color: rgb(153, 45, 5);
+  --third-main-colr: #03e503;
+  --third-main-colr: #03e503;
+  --bar-text-color: #fff;
+  --black-color: #000;
+  --text-black-50: rgba(0, 0, 0, 0.5);
+  --img-background: #fff;
+  --nav-bg: #fff;
+}
+.dark-mode {
+  --main-color: #0a58ca;
+  --second-main-colr: #dc3545;
+  --hover-color: rgb(153, 45, 5);
+  --third-main-colr: #03e503;
+  --bar-text-color: #fff;
+  --body-background: #27374d;
+  --black-color: #ffffffd3;
+  --text-black-50: rgba(255, 255, 255, 0.5);
+  --img-background: #27374d;
+  --nav-bg: #353535;
+}
+.fa-user {
+  background-color: var(--second-main-colr);
+  color: var(--bar-text-color);
+  padding: 15px;
+  border-radius: 50%;
+}
+form {
+  width: 100%;
+}
+form input {
+  width: 100%;
+  border: 2px solid;
+  border-color: transparent transparent var(--second-main-colr) transparent;
+}
+form input:focus {
+  border-color: transparent transparent var(--hover-color) transparent;
+  outline: none;
+}
+#submit {
+  background-color: var(--second-main-colr);
+  color: var(--bar-text-color);
+  padding: 10px 0;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+}
+#submit:hover {
+  background-color: var(--hover-color);
+}

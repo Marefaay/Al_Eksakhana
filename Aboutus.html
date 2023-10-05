@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About US</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/aboutus.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/476/476863.png?ga=GA1.1.1491737552.1695066341&track=ais"
+    />
+  </head>
+  <body>
+    <!-- PreLoader Start -->
+    <div class="preloader d-flex justify-content-center align-items-center flex-column">
+   
+      <h2 class="ps-3 pe-3 pt-2 pb-2 mb-3">El Agsakhana</h2>
+    <div class="loading-icon  d-flex justify-content-evenly align-items-center g-5 flex-wrap">
+     <div> <span class="fs-1" id="load">0 </span id="prog-enter"><span class="fs-1 ms-2 text-danger">%</span></div>
+       <span id="prog"> <span></span></span>
+      
+    </div>
+
+  </div>
+  <!-- PreLoader End -->
+        <!-- Top Bottom Start -->
+        <span id="top">
+          <i class="fa fa-arrow-up-long" aria-hidden="true"></i>
+        </span>
+        <!-- Top Bottom End -->
+    <!-- Login Start -->
+    <div class="login">
+      <div class="container">
+        <div class="login-conent">
+          <span id="mark"> <i class="fa-solid fa-xmark"></i> </span>
+          <div
+            class="strt-text d-flex flex-column justify-content-center align-items-center text-capitalize text-center"
+          >
+            <i class="fa-solid fa-right-to-bracket fa-2x"></i>
+            <h3>welcome!</h3>
+            <p>Sign in to your account</p>
+          </div>
+          <div
+            class="row justify-content-center align-items-center ms-4 me-4 pt-5 pb-5"
+          >
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <form >
+                <div>
+                  <label for="name" class="text-capitalize">name</label>
+                  <br />
+                  <input type="text" name="User Name" id="name" />
+                  <br />
+                  <br />
+                </div>
+                <div>
+                  <label for="pass" class="text-capitalize">Password</label>
+                  <br />
+                  <input type="password" name="pass" id="pass" />
+                  <br />
+                </div>
+                <div class="d-flex justify-content-evenly mt-3 mb-3 flex-wrap">
+                  <div class="d-flex">
+                    <input type="checkbox" name="remember me" id="rememebr" />
+                    <label for="rememebr" class="ms-2">Rememebr me?</label>
+                  </div>
+                  <a href="#">Forget password?</a>
+                </div>
+                <div class="d-flex flex-wrap">
+                  <input type="button" value="login" id="log" class="mb-2" />
+                  <a href="CreateAccount.html" target="_blank"
+                    >Create Account?</a
+                  >
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 d-sm-none d-lg-block">
+              <img
+                src="Images/6476194-removebg-preview.png"
+                class="img-fluid im"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Login End -->
+   <!-- Themes Start -->
+   <div
+   class="themes ms-3 d-flex justify-content-evenly align-items-center g-2 position-fixed"
+ >
+   <span href="#" id="sett"><i class="fa-solid fa-gear me-2"></i> </span>
+   <span href="#" data-theme="Light" id="theme1" class="actve">
+     <i class="fa-solid fa-sun text-light me-2"></i>
+   </span>
+
+   <span href="#" id="theme2" data-theme="Dark"><i class="fa-solid fa-moon"></i></span>
+ </div>
+ <!-- Themes End -->
+   <!-- NavBar Start -->
+   <nav
+   class="navbar navbar-expand-lg sticky-top bg-light navbar-light pb-0 pt-0"
+ >
+   <div class="container">
+     <a class="navbar-brand d-flex" href="#"
+       ><i class="fa-solid fa-staff-snake fa-2x"></i>
+       <span class="d-flex flex-column text-center"
+         >ELAgsakhana <br /><span id="slogan">
+           you are our responsibility</span
+         ></span
+       ></a
+     >
+     <div class="me-5 cart d-lg-none d-sm-block">
+       <i class="fa-solid fa-cart-shopping"></i>
+       <span id="shopping">0</span>
+     </div>
+     <div class="icons d-lg-none">
+       <span></span>
+       <span></span>
+     </div>
+   
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+         <li class="nav-item ms-2 me-2">
+           <a
+             class="nav-link fs-5"
+             aria-current="page"
+             href="index.html"
+             target="_blank"
+             >Home</a
+           >
+         </li>
+         <li class="nav-item ms-2 me-2 active">
+           <a class="nav-link fs-5" href="Aboutus.html" target="_blank">About us</a>
+         </li>
+         <li class="nav-item ms-2 me-2 ">
+           <a class="nav-link fs-5" href="contactus.html" target="_blank"
+             >Contact us</a
+           >
+         </li>
+         <li class="nav-item ms-2 me-2">
+           <a class="nav-link fs-5" href="#" id="other">Other Links</a>
+         </li>
+       </ul>
+       <div class="me-5 cart" id="crt">
+         <i class="fa-solid fa-cart-shopping"></i>
+         <span id="cart2">0</span>
+       </div>
+       <a id="login"><i class="fa-solid fa-user me-1"></i>login</a>
+     </div>
+   </div>
+ </nav>
+
+ <!-- NavBar End -->
+<!-- Small nav start -->
+<div class="small-nav d-lg-none text-center">
+ <ul class="list-unstyled">
+   <li class="mt-3 mb-3">
+     <a
+       href="index.html"
+       target="_blank"
+       class="fs-1 acive text-decoration-none text-capitalize"
+       >Home</a
+     >
+   </li>
+   <li class="mt-3 mb-3">
+     <a
+       href="Aboutus.html"
+       target="_blank"
+       class="fs-1 text-decoration-none text-capitalize"
+       >About Us</a
+     >
+   </li>
+   <li class="mt-3 mb-3">
+     <a
+       href="contactus.html"
+       target="_blank"
+       class="fs-1 text-decoration-none text-capitalize"
+       >Contact US</a
+     >
+   </li>
+   <li class="mt-3 mb-3 drp-dwn">
+     <a href="#" class="text-capitalize text-decoration-none fs-1 text-decoration-none text-capitalize d-flex align-items-center"
+       >other links <i class="fa-solid fa-angle-down ms-1" id="angle"></i></a
+     >
+     <div
+       class="drp-dwn-conent d-flex flex-column text-start text-capitalize"
+     >
+       <ul id="drp" class="list-unstyled pt-2 pb-2 ps-2 pe-2 rounded-2">
+         <li class="mt-2 mb-2">
+           <a href="services.html" target="_blank" class="text-decoration-none"
+             >Services</a
+           >
+         </li>
+         <li  class="mt-2 mb-2">
+           <a href="medcine.html" target="_blank" class="text-decoration-none"
+             >Buy Medicine</a
+           >
+         </li>
+         <li  class="mt-2 mb-2">
+           <a href="Testiomial.html" target="_blank" class="text-decoration-none"
+             >Testimonoal</a
+           >
+         </li>
+         <li  class="mt-2 mb-2">
+           <a href="Team.html" target="_blank" class="text-decoration-none"> our Team</a>
+         </li>
+       </ul>
+     </div>
+   </li>
+ </ul>
+</div>
+<!-- Small nav End -->
+   <!-- Under Small Nav Bar Start -->
+   <div class="under-Small-nav text-center text-capitalize pt-2 pb-2 d-lg-none d-sm-block">
+    <a id="login2"><i class="fa-solid fa-user me-1"></i>login</a>
+  
+  </div>
+      <!-- Under Small Nav Bar End -->
+ <!-- other Links Start -->
+ <div class="other-links   m-auto d-md-none d-lg-block">
+   <div class="container ">
+     <div class="row align-items-center justify-content-center ">
+       <div class="col-lg-6 col-md-6- col-sm-12">
+         <img
+           src="Images/2210.i203.008.F.m004.c9.addictions_bad_habits_cartoon-removebg-preview.png"
+           alt=""
+           class="img-fluid"
+         />
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-12">
+     
+            <div class="ul-conent ms-lg-5">
+             <ul class="list-unstyled">
+               <li>
+                 <a href="services.html" class="text-decoration-none" target="_blank"><i class="fa-solid fa-suitcase-medical me-2"></i>Services</a>
+               </li>
+               <li class="mt-3 mb-3 "><a href="medcine.html" target="_blank" class="text-decoration-none"><i class="fa-solid fa-store me-2"></i>Buy Medicine</a></li>
+               <li><a href="Testiomial.html" target="_blank" class="text-decoration-none"><i class="fa-solid fa-comments me-2"></i>Testimonial</a></li>
+               <li class="mt-3"><a href="Team.html" class="text-decoration-none " target="_blank"><i class="fa-solid fa-people-group me-2"></i>Our Team</a></li>
+
+             </ul>
+         
+            </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- other Links End -->
+     <!-- Cart pop up Start -->
+     <div class="crt-pop-up pt-2 pb-2 ps-3 pe-3">
+      <h4>You Have <span></span> Items In Your Cart</h4>
+    </div>
+    <!-- Cart pop up End -->
+    
+    <!-- main Start  -->
+    <div class="main pt-5 pt-sm-5">
+      <div class="container">
+        
+        <div class="text text-center text-capitalize mt-5 mt-sm-1 pt-5 pt-sm-2">
+          <h1>El Agsakhana Pharmasy</h1>
+          <h5>You Are Our Responsibility</h5>
+          <p class=" m-auto ps-3 pe-3 mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            praesentium explicabo officiis ut a. Necessitatibus quisquam
+            repudiandae temporibus ad ullam, nihil, alias adipisci sed, et iste
+            laboriosam. Fuga, voluptatum blanditiis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- main End -->
+    <!-- Why Chhose Us Start -->
+    <div class="why-choose-us" id="choose">
+      <div class="container pt-5 pb-5">
+        <div class="row ms-sm-3 me-sm-3 ms-md-0 me-md-0">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div
+              class="choose-item text-center shadow pt-5 pb-5 ps-2 pe-2 mt-2 mb-2"
+              id="first-choose"
+            >
+              <div class="icon">
+                <i class="fa fa-truck fa-2x" aria-hidden="true"></i>
+              </div>
+              <div class="txt">
+                <h5 class="text-uppercase mt-2 mb-2">FAST DELIVERY</h5>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div
+              class="choose-item text-center shadow pt-5 pb-5 ps-2 pe-2 mt-2 mb-2"
+              id="second-choose"
+            >
+              <div class="icon">
+                <i class="fa fa-clock-rotate-left fa-2x" aria-hidden="true"></i>
+              </div>
+              <div class="txt">
+                <h5 class="text-uppercase mt-1 mb-1">SUPPORT24/7</h5>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div
+              class="choose-item text-center shadow pt-5 pb-5 ps-2 pe-2 mt-2 mb-2"
+              id="third-choose"
+            >
+              <div class="icon">
+                <i class="fa fa-user-doctor fa-2x" aria-hidden="true"></i>
+              </div>
+              <div class="txt">
+                <h5 class="text-uppercase mt-1 mb-1">Qulaified</h5>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div
+              class="choose-item text-center shadow pt-5 pb-5 ps-2 pe-2 mt-2 mb-2"
+              id="fourth-choose"
+            >
+              <div class="icon">
+                <i class="fa fa-money-bill fa-2x" aria-hidden="true"></i>
+              </div>
+              <div class="txt">
+                <h5 class="text-uppercase mt-1 mb-1">Discounts</h5>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Why Chhose Us End -->
+    <!-- About us Start  -->
+    <div class="about mb-5 text-sm-center text-lg-start">
+      <div class="container">
+        <div class="row align-items-center ms-3 me-3">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+           <div class="content mt-5 mb-3">
+            <h1>El Agshakaha Pharmasy</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              odit dolorum est maxime officia tenetur molestias deserunt ipsam
+              magnam non. Impedit dolore cum dolor, vitae ut nihil tempora nam
+              deserunt.
+              <br>
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              odit dolorum est maxime officia tenetur molestias deserunt ipsam
+              magnam non. Impedit dolore cum dolor, vitae ut nihil tempora nam
+              deserunt.
+            </p>
+            <div
+            class="end-btn pt-2 pb-2 d-flex justify-content-md-center justify-content-lg-start justify-content-sm-center align-items-center"
+          >
+            <a
+              href="medcine.html"
+              target="_blank"
+              class="text-decoration-none d-flex align-items-center d-sm-block mt-md-3 mb-md-3 mt-lg-3 mb-lg-3 m-sm-0"
+            >
+              <span class="text-light">Abo </span> ut Medicine
+              <i class="fa-solid fa-arrow-right-long ms-3"></i
+            ></a>
+          </div>
+           </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <img src="Images/inner_page_1.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About us End -->
+     <!-- Get In touch Start -->
+     <div class="get-in-touch mb-5">
+      <div class="container">
+   
+        <div class="row ms-2 me-2">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <img src="Images/How_to_Write_a_Successful_Job_Inquiry_Email_The_Finest_Guide_with_Examples-fb-removebg-preview.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <form class="pt-2 pb-2 ps-3 pe-3 text-sm-center text-lg-start" action="thsanks.html">
+              <div>
+                <label for="name" class="text-capitalize ps-3">name</label>
+                <br />
+                <input
+                  type="text"
+                  placeholder="Ente Your Name"
+                  required
+                  id="name"
+                />
+              </div>
+              <div>
+                <label for="phone" class="text-capitalize ps-3"
+                  >phone number</label
+                >
+                <br />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter Your Phone Number"
+                  required
+                  id="phone"
+                />
+              </div>
+              <div>
+                <label for="message" class="text-capitalize ps-3"
+                  >message</label
+                >
+                <br />
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  placeholder="Enter your Message"
+                  required
+                  id="message"
+                ></textarea>
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center text-center"
+              >
+                <input
+                  type="submit"
+                  value="Send"
+                  class="p-0 me-lg-auto ms-lg-5"
+                  id="submit"
+                />
+              </div>
+            </form>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    <!-- Get In touch End -->
+    <!-- Footer Start -->
+    <div class="footer pt-3 pb-5 mt-5">
+      <div class="container text-center">
+        <div class="subscribe pt-4 pb-3 ps-3 pe-3">
+          <form action="">
+            <div class="row justify-content-center">
+              <div class="col-lg-9 col-md-8 col-sm-6">
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <button id="sub" class="">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row align-items-center justify-content-evenly mt-5 pt-5">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div
+              class="col-footer-conent first d-flex justify-content-center align-items-center flex-column"
+            >
+              <h2><span>ElAgsa</span>khana</h2>
+              <div
+                class="scial d-flex justify-content-evenly align-items-center"
+              >
+                <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram ms-3 me-3"></i>
+                </a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="col-footer-conent second">
+              <h5 class="text-capitalize fw-bold">useful links</h5>
+              <ul class="list-unstyled ms-2">
+                <li class="mt-1 mb-1">
+                  <a href="Aboutus.html" target="_blank" class="text-decoration-none text-capitalize"
+                    >about us <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </li>
+                <li class="mt-1 mb-1">
+                  <a href="contactus.html" target="_blank" class="text-decoration-none text-capitalize"
+                    >contact us <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </li>
+                <li class="mt-1 mb-1">
+                  <a href="Testiomial.html" target="_blank" class="text-decoration-none text-capitalize"
+                    >Testimnoal <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+            
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="col-footer-conent">
+              <h5 class="text-capitalize fw-bold">useful links</h5>
+              <ul class="list-unstyled ms-2">
+                <li class="mt-1 mb-1">
+                  <a href="Team.html" target="_blank" class="text-decoration-none text-capitalize"
+                    >our team <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </li>
+                <li class="mt-1 mb-1">
+                  <a href="medcine.html" target="_blank" class="text-decoration-none text-capitalize"
+                    >Medicine <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </li>
+              </li>
+              <li class="mt-1 mb-1">
+                <a href="services.html" target="_blank" class="text-decoration-none text-capitalize"
+                  >services <i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </li>
+                             </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="col-footer-conent">
+              <h5 class="text-capitalize fw-bold">inforamtion</h5>
+              <ul class="list-unstyled ms-2 info">
+                <li class="mt-1 mb-1 text-capitalize">
+                  <i class="fa-solid fa-clock me-1"></i> openng time
+                  <span class="d-block ms-3"> today 8am-12pm </span>
+                </li>
+                <li class="mt-2 mb-2 text-capitalize">
+                  <i class="fa-solid fa-location-dot me-1"></i> banha
+                </li>
+                <li class="mt-1 mb-1 text-capitalize">
+                  <i class="fa-solid fa-phone me-1"></i> 01028712705
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Under Footer Start -->
+    <div class="under-footer text-center text-capitalize pt-3 pb-3">
+      <div
+        class="container d-flex flex-row justify-content-center align-items-center"
+      >
+        <h5>copy right 2023 by &copy;</h5>
+        <div class="d-flex ms-1 mt-1 fw-bold fs-5">
+          <a href="https://marefaay.github.io/Portofolio/" target="_blank" class="d-flex text-decoration-none"><p class="me-1" id="r">R</p>
+            <p class="me-1" id="e">E</p>
+            <p class="me-1" id="f">F</p>
+            <p class="me-1" id="a">A</p>
+            <p class="me-1" id="ty">3</p>
+            <p class="me-1" id="y">Y</p></a>
+        </div>
+      </div>
+    </div>
+    <!-- Under Footer End -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aboutus.js"></script>
+  </body>
+</html>
